@@ -1,0 +1,14 @@
+<h2>Crear Usuario</h2>
+
+<form (ngSubmit)="createUsuario()">
+  <label for="usuario">Nombre de Usuario:</label>
+  <input type="text" id="usuario" [(ngModel)]="usuario.usuario" name="usuario" required>
+
+  <label for="pass">Contraseña:</label>
+  <input type="password" id="pass" [(ngModel)]="usuario.pass" name="pass" required>
+
+  <label for="personaId">ID de Persona Asociada:</label>
+  <input type="number" id="personaId" [(ngModel)]="usuario.personaId" name="personaId" required>
+
+  <button type="submit">Crear</button>
+</form>

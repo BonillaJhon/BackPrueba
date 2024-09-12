@@ -1,0 +1,36 @@
+/* Estilos generales para el formulario */
+.form-list {
+  list-style: none;
+  padding: 0;
+}
+
+.form-item {
+  margin-bottom: 15px;
+}
+
+.form-item label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-item input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.btn-submit {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #45a049;
+}

@@ -1,0 +1,22 @@
+<h2>Lista de Personas</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombres</th>
+      <th>Apellidos</th>
+      <th>Número de Identificación</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let persona of personas">
+      <td>{{ persona.identificador }}</td>
+      <td>{{ persona.nombres }}</td>
+      <td>{{ persona.apellidos }}</td>
+      <td>{{ persona.numeroIdentificacion }}</td>
+      <td>{{ persona.email }}</td>
+    </tr>
+  </tbody>
+</table>

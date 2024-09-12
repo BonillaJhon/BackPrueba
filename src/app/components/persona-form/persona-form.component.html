@@ -1,0 +1,36 @@
+<h2>Crear Persona</h2>
+
+<form (ngSubmit)="createPersona()">
+  <ul style="list-style: none; padding: 0;">
+    <li style="margin-bottom: 10px;">
+      <label for="nombres" style="display: block;">Nombres:</label>
+      <input type="text" id="nombres" [(ngModel)]="persona.nombres" name="nombres" required style="width: 100%; padding: 8px;">
+    </li>
+
+    <li style="margin-bottom: 10px;">
+      <label for="apellidos" style="display: block;">Apellidos:</label>
+      <input type="text" id="apellidos" [(ngModel)]="persona.apellidos" name="apellidos" required style="width: 100%; padding: 8px;">
+    </li>
+
+    <li style="margin-bottom: 10px;">
+      <label for="numeroIdentificacion" style="display: block;">Número de Identificación:</label>
+      <input type="text" id="numeroIdentificacion" [(ngModel)]="persona.numeroIdentificacion" name="numeroIdentificacion" required style="width: 100%; padding: 8px;">
+    </li>
+
+    <li style="margin-bottom: 10px;">
+      <label for="email" style="display: block;">Email:</label>
+      <input type="email" id="email" [(ngModel)]="persona.email" name="email" required style="width: 100%; padding: 8px;">
+    </li>
+
+    <li style="margin-bottom: 10px;">
+      <label for="tipoIdentificacion" style="display: block;">Tipo de Identificación:</label>
+      <input type="text" id="tipoIdentificacion" [(ngModel)]="persona.tipoIdentificacion" name="tipoIdentificacion" style="width: 100%; padding: 8px;">
+    </li>
+
+    <li style="margin-top: 20px;">
+      <button type="submit" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">
+        Crear
+      </button>
+    </li>
+  </ul>
+</form>
